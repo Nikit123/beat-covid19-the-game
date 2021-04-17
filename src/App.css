@@ -25,13 +25,20 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  height: 15vmin;
+}
+
+.Lab {
+  position: absolute;
+  left: 92%;
+  top: 86%;
+  transform: translate(-50%,-50%);
+  cursor: url(./content/vaccine.png),auto;;
 }
 
 .Cell {
   position: absolute;
   transform: translate(-50%,-50%);
-  height: 10vmin;
+  height: 5vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
