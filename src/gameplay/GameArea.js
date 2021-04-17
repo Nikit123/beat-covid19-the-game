@@ -44,7 +44,8 @@ export default class GameArea extends Component {
 
     increaseInfection = () => {
         var infection = this.state.doomsDayCounter;
-        infection++;
+        if (infection < 3)
+            infection++;
         if (infection >= 3)
             this.setState({ gameOver: true })
         this.setState({ doomsDayCounter: infection });
