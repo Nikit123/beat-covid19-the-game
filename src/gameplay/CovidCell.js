@@ -4,20 +4,26 @@ import moving_covid from '../content/moving_covid.png';
 
 export default class CovidCell extends Component {
 
+    static propTypes = {
+        increaseInfection: Proptypes.func
+    }
 
-    state = {
-        cellDetails: {
-            x: 0,
-            y: 0,
-            vectorX: 0,
-            vectorY: 0
+    constructor(props) {
+        super(props);
+        this.state = {
+            cellDetails: {
+                x: 0,
+                y: 0,
+                vectorX: 0,
+                vectorY: 0
+            }
         }
     }
 
     bounce = () => {
         var cell = this.state.cellDetails;
-        cell.vectorX = -1;
-        cell.vectorY = -1;
+        cell.vectorX = -cell.vectorX;
+        cell.vectorY = -cell.vectorY;
         this.setState({ cellDetails: cell });
     }
 
@@ -25,7 +31,8 @@ export default class CovidCell extends Component {
         var cell = this.state.cellDetails;
         cell.x = cell.x + cell.vectorX;
         cell.y = cell.y + cell.vectorY;
-        this.setState({ cellDetails: cell });
+        if (!(cell.vectorX == 0 && cell.vectorY == 0))
+            this.setState({ cellDetails: cell });
     }
 
     generateCell = () => {
@@ -35,8 +42,8 @@ export default class CovidCell extends Component {
         var heightMax = Math.floor(document.getElementsByClassName('Game-body')[0].clientHeight);
         var xCord = Math.floor(Math.random() * (widthMax - widthMin + 1) + widthMin);
         var yCord = Math.floor(Math.random() * (heightMax - heightMin + 1) + heightMin);
-        var dirX = Math.floor((Math.random() * 3) - 1);
-        var dirY = Math.floor((Math.random() * 3) - 1);
+        var dirX = Math.floor(Math.random() * 2) == 0 ? -1 : 1;
+        var dirY = Math.floor(Math.random() * 2) == 0 ? -1 : 1;
         var cell = {
             x: xCord,
             y: yCord,
@@ -65,17 +72,20 @@ export default class CovidCell extends Component {
     componentDidUpdate = () => {
         var playArea = document.getElementsByClassName('Game-body')[0];
         var cell = this.state.cellDetails;
-        if (cell.x < 0 && cell.vectorX != 1)
-            cell.vectorX = 1;
-        if (cell.x > playArea.clientWidth && cell.vectorX != -1)
-            cell.vectorX = -1;
-        if (cell.y < document.getElementsByClassName('Header')[0].clientHeight && cell.vectorY != 1)
-            cell.vectorY = 1;
-        if (cell.y > playArea.clientHeight && cell.vectorY != -1)
-            cell.vectorY = -1;
         if (this.isCollideWithEarth(cell)) {
             cell.vectorX = 0;
             cell.vectorY = 0;
+            this.props.increaseInfection();
+        }
+        else {
+            if (cell.x < 0 && cell.vectorX != 1)
+                cell.vectorX = 1;
+            if (cell.x > playArea.clientWidth && cell.vectorX != -1)
+                cell.vectorX = -1;
+            if (cell.y < document.getElementsByClassName('Header')[0].clientHeight && cell.vectorY != 1)
+                cell.vectorY = 1;
+            if (cell.y > playArea.clientHeight && cell.vectorY != -1)
+                cell.vectorY = -1;
         }
         if (cell != this.state.cellDetails)
             this.setState({ cellDetails: cell });
