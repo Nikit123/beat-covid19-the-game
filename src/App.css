@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  position: fixed;
+  background-color: antiquewhite;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Game-body {
+  width: 100%;
+  height: 100%;
+  cursor: url(./content/doctor-cursor.png),auto;
+}
+
+.Header-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.Earth {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 15vmin;
+}
+
+.Cell {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  height: 10vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Header-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
