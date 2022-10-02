@@ -2,9 +2,10 @@
 
 ## How to install
 1. Clone the project.
-2. Run 'npm install'.
-3. Make sure you are in the game directory and then run 'npm start'.
-4. Enjoy :)
+2. Make sure you are in the game directory.
+3. Run 'npm install'.
+4. Run 'npm start'.
+5. Enjoy :)
 
 ## How to play
 - Defend the earth from deadly covid-19 using your cursor, bouncing back the virus as it reaches earth, 3 hits will result in game over.
