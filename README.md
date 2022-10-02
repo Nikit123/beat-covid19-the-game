@@ -7,6 +7,8 @@
 4. Run 'npm start'.
 5. Enjoy :)
 
+OR you can check it out [here](https://nikit123.github.io/Beat-Covid19-The-Game/).
+
 ## How to play
 - Defend the earth from deadly covid-19 using your cursor, bouncing back the virus as it reaches earth, 3 hits will result in game over.
 
