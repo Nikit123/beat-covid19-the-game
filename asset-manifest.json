@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Beat-Covid19-The-Game/static/css/main.c284dc7a.chunk.css",
-    "main.js": "/Beat-Covid19-The-Game/static/js/main.46f5b6fb.chunk.js",
-    "main.js.map": "/Beat-Covid19-The-Game/static/js/main.46f5b6fb.chunk.js.map",
-    "runtime-main.js": "/Beat-Covid19-The-Game/static/js/runtime-main.1df968c5.js",
-    "runtime-main.js.map": "/Beat-Covid19-The-Game/static/js/runtime-main.1df968c5.js.map",
-    "static/js/2.89289bbb.chunk.js": "/Beat-Covid19-The-Game/static/js/2.89289bbb.chunk.js",
-    "static/js/2.89289bbb.chunk.js.map": "/Beat-Covid19-The-Game/static/js/2.89289bbb.chunk.js.map",
-    "index.html": "/Beat-Covid19-The-Game/index.html",
-    "precache-manifest.09895dcb52ce41a6faad7509687ddc1b.js": "/Beat-Covid19-The-Game/precache-manifest.09895dcb52ce41a6faad7509687ddc1b.js",
-    "service-worker.js": "/Beat-Covid19-The-Game/service-worker.js",
-    "static/css/main.c284dc7a.chunk.css.map": "/Beat-Covid19-The-Game/static/css/main.c284dc7a.chunk.css.map",
-    "static/js/2.89289bbb.chunk.js.LICENSE.txt": "/Beat-Covid19-The-Game/static/js/2.89289bbb.chunk.js.LICENSE.txt",
-    "static/media/covid.svg": "/Beat-Covid19-The-Game/static/media/covid.2c352da4.svg",
-    "static/media/globe.png": "/Beat-Covid19-The-Game/static/media/globe.5bde68a7.png",
-    "static/media/lab.png": "/Beat-Covid19-The-Game/static/media/lab.3b693303.png",
-    "static/media/moving_covid.png": "/Beat-Covid19-The-Game/static/media/moving_covid.ab4c37e8.png"
+    "main.css": "/beat-covid19-the-game/static/css/main.c284dc7a.chunk.css",
+    "main.js": "/beat-covid19-the-game/static/js/main.c23e4116.chunk.js",
+    "main.js.map": "/beat-covid19-the-game/static/js/main.c23e4116.chunk.js.map",
+    "runtime-main.js": "/beat-covid19-the-game/static/js/runtime-main.0e576156.js",
+    "runtime-main.js.map": "/beat-covid19-the-game/static/js/runtime-main.0e576156.js.map",
+    "static/js/2.4ce1e269.chunk.js": "/beat-covid19-the-game/static/js/2.4ce1e269.chunk.js",
+    "static/js/2.4ce1e269.chunk.js.map": "/beat-covid19-the-game/static/js/2.4ce1e269.chunk.js.map",
+    "index.html": "/beat-covid19-the-game/index.html",
+    "precache-manifest.d8f8bebea0cc276a7f5703cec03cd7bb.js": "/beat-covid19-the-game/precache-manifest.d8f8bebea0cc276a7f5703cec03cd7bb.js",
+    "service-worker.js": "/beat-covid19-the-game/service-worker.js",
+    "static/css/main.c284dc7a.chunk.css.map": "/beat-covid19-the-game/static/css/main.c284dc7a.chunk.css.map",
+    "static/js/2.4ce1e269.chunk.js.LICENSE.txt": "/beat-covid19-the-game/static/js/2.4ce1e269.chunk.js.LICENSE.txt",
+    "static/media/covid.svg": "/beat-covid19-the-game/static/media/covid.2c352da4.svg",
+    "static/media/globe.png": "/beat-covid19-the-game/static/media/globe.5bde68a7.png",
+    "static/media/lab.png": "/beat-covid19-the-game/static/media/lab.3b693303.png",
+    "static/media/moving_covid.png": "/beat-covid19-the-game/static/media/moving_covid.ab4c37e8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1df968c5.js",
-    "static/js/2.89289bbb.chunk.js",
+    "static/js/runtime-main.0e576156.js",
+    "static/js/2.4ce1e269.chunk.js",
     "static/css/main.c284dc7a.chunk.css",
-    "static/js/main.46f5b6fb.chunk.js"
+    "static/js/main.c23e4116.chunk.js"
   ]
 }
