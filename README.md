@@ -1,4 +1,4 @@
-# Beat-Covid19-The-Game
+# beat-covid19-the-game
 
 ## How to install
 1. Clone the project.
